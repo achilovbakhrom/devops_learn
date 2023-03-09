@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Usage: ./script.sh 100000
 
 # Arguments:
@@ -26,7 +28,7 @@ process_mem_info() {
 
 if [[ "$#" -eq 1 && $1 =~ $number_regex ]]; then
 	process_mem_info $1
-elif [[ "$#" -eq 0 ]]; then
+elif [ "$#" -eq 0 ]; then
 	process_mem_info $default_threshold
 else
 	echo "Illegal number of arguments or invalid type of the argument."
