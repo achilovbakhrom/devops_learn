@@ -1,2 +1,4 @@
+.DS_Store
+
 node_modules
 ./lab_1/front-app
